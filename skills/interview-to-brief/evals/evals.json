@@ -1,0 +1,44 @@
+{
+  "skill_name": "interview-to-brief",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A fractional CFO replied yes to my research email and booked Thursday 10am CT. Her site says every engagement starts with a 'Financial Assessment' of job costing, WIP, and cash flow before month-to-month support. Write my interview guide.",
+      "expected_output": "A guide filled from the template: one goal at the top (one recurring workflow described well enough for a one-page brief), five timed sections totalling 20 minutes, questions anchored to her Financial Assessment, likely workflow candidates drawn from the site, a capture checklist, and guardrails against pitching. It notes that the site's offer may not be the chore she runs.",
+      "files": [],
+      "expectations": [
+        "The guide states one goal: leave with one recurring workflow described well enough for a one-page brief",
+        "The sections carry minute allocations that sum to about 20",
+        "At least one question references the Financial Assessment or its parts (job costing, WIP, cash flow)",
+        "The guide contains a guardrail against pitching or naming a product on the call",
+        "The guide includes the 'which chore do you dread most' question or an equivalent that can surface a different workflow than the site offer"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here is the transcript of yesterday's 30-minute research call with an independent HR consultant (pasted below). Write the findings file and tell me what I promised her.\n\n[Transcript excerpt] ... she said: 'Every new client, I spend the first two weeks rebuilding their handbook from whatever they have, usually three old Word docs and a Google Drive folder. I use Claude to pull the sections together but I still retype the policy tables.' ... I said: 'I'll send you a one-page brief on that, and I'll dig into how other HR consultants handle the handbook rebuild and send you what I find. And I'll connect on LinkedIn.' ... she said: 'I'll send you the name of the compliance tool we tried.'",
+      "expected_output": "A findings file in the template layout with the workflow table filled from the transcript (handbook rebuild; trigger new client; cadence two weeks; tools Word, Google Drive, Claude; failure point retyping policy tables), a promises list with three promises by the user and one by her, and a Delivery table listing the three promises as open.",
+      "files": [],
+      "expectations": [
+        "The workflow table names the handbook rebuild as the workflow with 'new client' as the trigger",
+        "The tools row lists Word documents, Google Drive, and Claude",
+        "A failure point mentions retyping policy tables",
+        "The promises list contains exactly three promises by the user: a one-page brief, research on how other HR consultants handle the rebuild, and a LinkedIn connect",
+        "The promises list contains her promise to send the name of the compliance tool",
+        "A Delivery table exists with the user's promises marked as open or not yet delivered",
+        "No client of hers is named in the file"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What do I still owe the participant from last week's call? The findings file is at research/interviews/2026-09-02-example-findings.md and has a Delivery table.",
+      "expected_output": "The response runs scripts/check_promises.py on the file (or reads the Delivery table) and lists every promise whose status is not Done, Live, or Sent, with the artifact path for each, and says whether the call is finished by the skill's definition (zero open rows).",
+      "files": [],
+      "expectations": [
+        "The response runs or reproduces the output of check_promises.py against the Delivery table",
+        "Every listed item is a row whose status is not Done, Live, or Sent",
+        "The response states whether the call is finished under the zero-open-rows rule"
+      ]
+    }
+  ]
+}

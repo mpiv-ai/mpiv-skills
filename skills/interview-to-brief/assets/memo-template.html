@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>{N} themes · Memo for {Participant} · MPIsaac Ventures</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0d0f12;--ink2:#12151a;--ink3:#1a1e25;--slate:#7e93a6;--text:#f2f5f8;--body:#c1c8d1;--muted:#8f98a3;
+    --line:rgba(242,245,248,.12);--disp:"Newsreader",Georgia,serif;--sans:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;--r:2px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--body);font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:var(--disp);color:var(--text);font-weight:400;letter-spacing:-.018em;line-height:1.1;margin:0;text-wrap:balance}
+  h1{font-size:clamp(34px,4.6vw,56px);max-width:18ch;margin:18px 0 22px}
+  h2{font-size:clamp(26px,2.8vw,36px);margin:0 0 16px}
+  h3{font-size:19px;font-weight:500;letter-spacing:0;color:var(--slate);text-transform:uppercase;font-family:var(--sans);font-size:11px;letter-spacing:.18em;margin:26px 0 10px}
+  p{margin:0 0 16px}
+  a{color:var(--slate);text-decoration:none;border-bottom:1px solid rgba(126,147,166,.35)}
+  a:hover{color:var(--text);border-color:var(--text)}
+  strong{color:var(--text);font-weight:500}
+  .topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 28px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:10px;border:0}
+  .brand svg{width:26px;height:26px}
+  .brand span{font-family:var(--disp);font-size:18px;font-weight:500;color:var(--text)}
+  .meta{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .wrap{max-width:780px;margin:0 auto;padding:64px 28px 96px}
+  .tag{display:inline-block;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--body);border:1px solid var(--line);border-radius:var(--r);padding:8px 14px}
+  .lead{font-size:20px;color:var(--text);line-height:1.5;max-width:64ch}
+  .kicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--slate);font-weight:600;margin:0 0 14px}
+  section{padding:44px 0;border-top:1px solid var(--line)}
+  .card{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;background:rgba(242,245,248,.025);margin:22px 0 8px}
+  .card .hd{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--slate);font-weight:600;margin-bottom:8px}
+  .card p{margin:0;font-size:17px}
+  ul.src{list-style:none;padding:0;margin:0}
+  ul.src li{font-size:15px;color:var(--muted);padding:8px 0;border-top:1px solid var(--line);line-height:1.5}
+  ul.src li a{color:var(--body)}
+  ul.gaps{padding-left:20px;margin:0}
+  ul.gaps li{margin:0 0 10px}
+  .sign{margin-top:44px;padding-top:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+  .sign .who{font-family:var(--disp);font-size:26px;color:var(--text);line-height:1.2}
+  .sign .who small{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);margin-top:6px}
+  .sign a.site{font-family:var(--disp);font-size:20px;color:var(--text)}
+  @media(max-width:700px){.wrap{padding:44px 20px 72px}.topbar{padding:16px 18px}.meta{display:none}body{font-size:17px}}
+  @media print{body{background:#fff;color:#222}h1,h2,strong,.lead,.sign .who{color:#000}a{color:#345}.card{background:#f5f6f8}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="https://mpiv.ai" target="_blank" rel="noopener">
+    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="wave" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#4A90A4"/><stop offset="50%" stop-color="#5B9BD5"/><stop offset="100%" stop-color="#2E5984"/></linearGradient></defs>
+      <path d="M4 16 Q10 12 16 16 T28 16 T40 16" stroke="url(#wave)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M4 20 Q10 16 16 20 T28 20 T40 20" stroke="url(#wave)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".7"/>
+      <path d="M4 24 Q10 20 16 24 T28 24 T40 24" stroke="url(#wave)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".5"/>
+    </svg>
+    <span>MPIsaac Ventures</span>
+  </a>
+  <span class="meta">Prepared for {Participant}</span>
+</header>
+
+<main class="wrap">
+  <span class="tag">Themes memo · {D Month YYYY}</span>
+  <h1>What other people say about the {N} themes from {day}.</h1>
+  <p class="lead">{First name}, here is the memo I promised on the {N} themes from our call. My agents gathered the sources on {date} and I read each one before writing this. {How many} of the {N} themes have thin evidence, and I mark those spots.</p>
+
+  <section>
+    <p class="kicker">01</p>
+    <h2>{Theme}</h2>
+    <p>{What the sources say. Two paragraphs at most. Numbers with their source and date.}</p>
+    <div class="card"><div class="hd">For you</div><p>{Two or three plain sentences that connect the sources to what they said on the call.}</p></div>
+    <h3>Sources</h3>
+    <ul class="src">
+      <li><a href="{URL}" target="_blank" rel="noopener">{Title}</a>, {Author}, {date}. {One-line takeaway.}</li>
+      <li><a href="{URL}" target="_blank" rel="noopener">{Title}</a>, {Author}, {date}. {One-line takeaway.}</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="kicker">02</p>
+    <h2>{Theme}</h2>
+    <p>{What the sources say.}</p>
+    <div class="card"><div class="hd">For you</div><p>{Plain sentences.}</p></div>
+    <h3>Sources</h3>
+    <ul class="src">
+      <li><a href="{URL}" target="_blank" rel="noopener">{Title}</a>, {Author}, {date}. {Takeaway.}</li>
+    </ul>
+  </section>
+
+  <section>
+    <p class="kicker">What I could not find</p>
+    <h2>Gaps</h2>
+    <ul class="gaps">
+      <li>{A claim from the call that no independent source confirms or measures.}</li>
+      <li>{A comparison nobody has published.}</li>
+    </ul>
+    <p style="margin-top:22px">The aggregated research comes when the interview series wraps. It will not identify you or your clients unless you say so.</p>
+    <div class="sign">
+      <div class="who">Michael Isaac<small>MPIsaac Ventures · {cadence} from here</small></div>
+      <a class="site" href="https://mpiv.ai" target="_blank" rel="noopener">mpiv.ai</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>
