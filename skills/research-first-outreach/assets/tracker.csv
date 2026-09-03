@@ -1,0 +1,2 @@
+first_name,last_name,email,company,site,role,workflow_page,observation,segment,cohort,variant,status,first_sent_at,replied_at,booked_at,call_at,brief_sent_at,notes
+Jane,Doe,jane@example.com,Example Advisory,https://example.com,Fractional COO,https://example.com/how-we-work,"I saw that your 30-day operations review ends with a written priorities memo.",fractional-coo,1,B,identified,,,,,,

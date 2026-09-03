@@ -1,0 +1,46 @@
+{
+  "skill_name": "research-first-outreach",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a fractional CFO. Build me a list of ten independent bookkeeping and controller consultants in the US who describe their onboarding process on their website, so I can ask them for a 20-minute research conversation about month-end close.",
+      "expected_output": "A markdown table with one row per person containing first_name, last_name, email, company, site, role, workflow_page, observation, and segment, plus a list of dropped candidates with one-line reasons. Before building the list, the response checks the step 0 preconditions (a real research question, a research page, a scheduling link, a mailbox with a postal address) and asks for whichever is missing.",
+      "files": [],
+      "expectations": [
+        "The response asks about or confirms the step 0 preconditions before or alongside producing the list",
+        "Every row has all nine record fields",
+        "Every observation sentence starts with 'I saw that', 'I noticed', or 'Your'",
+        "No observation sentence contains praise words such as 'impressive', 'love', 'great', or 'amazing'",
+        "Every observation sentence names a specific artifact, phase, number, or offer from the person's site",
+        "Dropped candidates are listed with a one-line reason each"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Write the outreach email for this person: Dana Ruiz, founder of Ruiz Ops Advisory, fractional COO for dental groups. Her site says every engagement starts with a two-week 'Operations Snapshot' that ends in a written 90-day plan. My research question is how multi-location practices handle recurring reporting. Research page is https://example.com/research, I've spent 18 years in practice operations.",
+      "expected_output": "One plain-text email that matches the template in references/email-template.md with only the greeting, the observation sentence, the years, and the research question filled in. Subject line 'Question about your client workflow'. The observation sentence mentions the Operations Snapshot and the 90-day plan. The footer keeps the postal-address placeholder and the opt-out line.",
+      "files": [],
+      "expectations": [
+        "The subject line is exactly 'Question about your client workflow'",
+        "The observation sentence mentions the two-week Operations Snapshot or the written 90-day plan",
+        "The body contains the line 'This is research, not a sales call' or 'This is research, not a sales call or product demo'",
+        "The body contains the sentence about the one-page brief, the aggregated summary, and not identifying or quoting without explicit permission",
+        "The footer contains an opt-out line that invites a 'no' reply",
+        "The email does not add a pitch, a product name, or a pricing mention"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Someone from my outreach list replied 'yes'. What do I send back, and what do I do before the call?",
+      "expected_output": "The short 'yes' reply from the template (scheduling link, one line, no new pitch), sent within the hour; then a one-page interview guide for the user with the single goal of leaving with one recurring workflow described well enough for a brief; a reminder not to pitch on the call; and the 24-hour brief delivery commitment after the call.",
+      "files": [],
+      "expectations": [
+        "The response gives a reply that contains the scheduling link and no pitch",
+        "The response says to send the reply within the hour",
+        "The response describes an interview guide with trigger, cadence, actors, tools, failure points, what they tried, and their words for fixed",
+        "The response says not to pitch on the call",
+        "The response commits to sending the brief within 24 hours of the call"
+      ]
+    }
+  ]
+}

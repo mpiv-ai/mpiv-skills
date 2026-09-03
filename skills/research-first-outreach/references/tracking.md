@@ -10,10 +10,10 @@ Status values, in order: identified, drafted, sent, replied, booked, closed.
 
 ## The note logged per send
 
-This is the exact note attached to each person in the CRM after cohort 1 and cohort 2 went out. Copy the shape.
+This is the note attached to each person in the CRM after cohort 1 and cohort 2 went out, with the title punctuation simplified. Copy the shape.
 
 ```
-Campaign: AI Workflow Research — Cohort 1
+Campaign: AI Workflow Research - Cohort 1
 Occurred at: 2026-08-31T19:57:00.000Z
 Direction: Outbound
 Channel: Email from michael@mpiv.ai

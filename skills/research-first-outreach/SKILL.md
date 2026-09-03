@@ -114,7 +114,29 @@ The method still applies when the user's real goal is future clients, on one con
 
 ## Files
 
-- [references/email-template.md](references/email-template.md): the exact email, both variants, footer.
+Read these when the step calls for them, not up front.
+
+- [references/email-template.md](references/email-template.md): the exact email, both variants, the yes reply, the one follow-up.
 - [references/list-building.md](references/list-building.md): queries, qualification checklist, record fields, an agent prompt.
 - [references/research-page.md](references/research-page.md): the sections the public research page needs.
-- [references/tracking.md](references/tracking.md): tracker columns and the note format Michael logged per send.
+- [references/tracking.md](references/tracking.md): tracker columns and the note logged per send.
+- [assets/tracker.csv](assets/tracker.csv): the tracker with the exact columns and one placeholder row. Copy it, do not rebuild it.
+- [assets/research-page.html](assets/research-page.html): the research page with the ten sections as placeholders. Fill it, host it on a domain the user owns.
+- [examples/run-2026-09.md](examples/run-2026-09.md): the first run, redacted: timeline, the email that got the reply, the observation sentences, the numbers. Read this before writing any observation sentence.
+- [examples/cohorts-2026-09.csv](examples/cohorts-2026-09.csv): the 20 sends by cohort, role, variant, and outcome.
+- [scripts/check_tracker.py](scripts/check_tracker.py): checks every tracker row (fields present, observation opener, no praise words, status values) and prints reply and booking rate per cohort. Run it before each send batch: `python3 scripts/check_tracker.py tracker.csv`.
+- [evals/evals.json](evals/evals.json): three test prompts with expectations, in the Agent Skills eval format.
+
+## Provenance
+
+| Field | Value |
+|---|---|
+| Origin | MPIV "AI Workflow Research" campaign, Michael Isaac, michael@mpiv.ai |
+| First run | 2026-08-31 and 2026-09-01, 20 emails in two cohorts |
+| Result | 1 reply in 18 hours, 1 call, deliverables sent 2026-09-03 |
+| Evidence | Sent mail in michael@mpiv.ai, Twenty CRM notes, [examples/run-2026-09.md](examples/run-2026-09.md) |
+| Added to library | 2026-09-03 |
+
+### Changelog
+
+- 2026-09-03: first version, reconstructed from the sent emails and the CRM notes. Added assets, examples, evals, and the tracker checker the same day.

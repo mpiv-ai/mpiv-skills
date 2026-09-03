@@ -1,0 +1,46 @@
+{
+  "skill_name": "mpiv-skill-creator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "We just finished a client health-check engagement where I used a 12-question intake, a scoring sheet, and a two-page findings memo. It's run twice now, both clients signed follow-on work. Make this a skill in the MPIV library.",
+      "expected_output": "A new folder skills/<name>/ with SKILL.md (steps, files list, provenance block filled with the two runs, changelog), evals/evals.json with 2 or 3 cases, assets/ holding the intake and scoring sheet as fillable templates, examples/ holding one redacted run, a README row in the library, and a version bump. The response reports the check_skill.py, claude plugin validate, and npx skills add --list results and hands Michael the commit command instead of committing.",
+      "files": [],
+      "expectations": [
+        "The response asks about or records the two runs and their outcomes in the provenance block",
+        "The skill name follows the spec pattern and equals the directory name",
+        "SKILL.md contains a '## Provenance' table and a '### Changelog'",
+        "evals/evals.json exists with at least two cases, each having prompt, expected_output, and expectations",
+        "The intake questions and scoring sheet are placed under assets/ with placeholders instead of client data",
+        "No client names appear anywhere in the skill folder",
+        "The response runs or instructs running check_skill.py and claude plugin validate",
+        "The response does not commit or push; it gives the commit command with author michael@mpiv.ai"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have an idea for a skill that writes proposals. Haven't tried it on a real proposal yet. Add it to the library.",
+      "expected_output": "The response stops at step 0: it explains that library skills come from methods that have run on real work, offers to draft the skill with 'First run: none yet' in the provenance block and outside the README table, or to help run it on a real proposal first, and does not register it as a finished skill.",
+      "files": [],
+      "expectations": [
+        "The response says the method has not run on real work and treats that as a blocker to registration",
+        "If a folder is created, its provenance block says the first run is none yet",
+        "The skill is not added to the README table",
+        "The response offers a concrete way to get a first run"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Check the research-first-outreach skill against the current spec and tell me what is wrong with it.",
+      "expected_output": "The response runs check_skill.py on skills/research-first-outreach and claude plugin validate on the library, reports each finding with the file and line or field, checks the description length and the 500-line limit, confirms the provenance block, and lists anything the official-guidance file says has changed since its check date.",
+      "files": [],
+      "expectations": [
+        "The response runs or reports the output of check_skill.py",
+        "The response runs or reports the output of claude plugin validate",
+        "Findings name the file and the field or line",
+        "The response states the description character count and whether it is under 1024",
+        "The response notes the check date of references/official-guidance.md"
+      ]
+    }
+  ]
+}
