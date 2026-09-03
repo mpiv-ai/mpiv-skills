@@ -1,6 +1,6 @@
 # List building
 
-The agent builds the list. The human approves it. Source two to three times the number you plan to email.
+The agent builds the list. The user approves it. Find two to three times as many candidates as you plan to email.
 
 ## Record fields
 
@@ -35,11 +35,11 @@ Examples:
 - `"fractional CTO" "readiness assessment"`
 - `"practice management" consultant "startup" medical -site:linkedin.com`
 
-Skip LinkedIn, job boards, and directory sites in results. You want the person's own domain.
+Skip LinkedIn, job boards, and directory sites in the results. Use the person's own domain.
 
 ## Qualification checklist
 
-Open the site. Read the services page and the about page. Then answer yes to all four or drop the row.
+Open the site. Read the services page and the about page. Drop the row unless all four answers are yes.
 
 1. Is there a named human who owns the practice?
 2. Is there a page that describes a repeatable client workflow in their own words?

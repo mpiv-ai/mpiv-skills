@@ -1,6 +1,6 @@
 # The research page
 
-One public URL the email points to. It carries everything the email leaves out. Michael's is https://mpiv.ai/research/client-workflows. A Substack post, a Notion page, or a single HTML file all work if they have these sections in this order.
+One public URL that the email links to. It holds everything the email leaves out. Michael's page is https://mpiv.ai/research/client-workflows. A Substack post, a Notion page, or one HTML file works if it has these sections in this order.
 
 ## Sections
 
@@ -13,7 +13,7 @@ One public URL the email points to. It carries everything the email leaves out. 
    - Where does expert judgment belong?
    - Why have earlier automation attempts failed?
    - What would make the result usable with a paying client?
-6. What "done" or "client-ready" means to you. Five plain criteria. This section tells a sceptical reader that you have a standard.
+6. What "done" or "client-ready" means to you. Five plain criteria.
 7. Your method, in six steps. Choose a valuable workflow. Define what done means. Set the boundaries. Build the smallest complete path. Test failures and repair them. Demonstrate and transfer ownership.
 8. The interview plan, with minutes. 2 min context. 8 min one workflow. 6 min friction and trust. 4 min close.
 9. Who you are. Years, the kind of work, one link to the rest of you. No résumé.
@@ -21,6 +21,6 @@ One public URL the email points to. It carries everything the email leaves out. 
 
 ## Rules
 
-- No pricing, no product name, no "book a demo". If the page sells anything, the email is a pitch.
+- No pricing, no product name, no "book a demo". If the page sells something, the email reads as a pitch.
 - Every promise on the page must be one you will keep for every participant, including the ones who never become clients.
 - Put the page on a domain you own. A LinkedIn post does not count.

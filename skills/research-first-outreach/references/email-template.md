@@ -62,16 +62,16 @@ Read about the research: {research page URL}  ·  View a sample opportunity brie
 If this isn't relevant, reply "no" and I won't follow up.
 ```
 
-## Why each line is there
+## What each line does
 
-- Observation sentence first. It is the only personalised line and it proves a person read the site.
-- One sentence of credibility, stated as years and a plain verb. No titles, no logos.
-- The research question in one clause. If it takes two, the question is not sharp enough yet.
-- The ask is a number of minutes and a verb. "Discuss one of those workflows for 20 minutes."
+- The observation sentence comes first. It is the only line written for this person. It shows a person read the site.
+- One sentence of credibility: years and a plain verb. No titles, no logos.
+- The research question in one clause. If it needs two, sharpen it.
+- The ask: a number of minutes and a verb. "Discuss one of those workflows for 20 minutes."
 - "This is research, not a sales call" on its own line. Recipients quote this line back.
-- The deliverable, named. A one-page brief for them, an aggregated summary for everyone, and a privacy promise with the word "explicit" in it.
-- The reply mechanism is one word. "Reply yes."
-- The research page carries everything you cut from the email.
+- The deliverable, named: a one-page brief for them, an aggregated summary for everyone, and a privacy promise with the word "explicit" in it.
+- The reply mechanism is one word: "yes".
+- The research page holds everything the email leaves out.
 - Postal address and an opt-out line. Required for commercial email in the US under CAN-SPAM.
 
 ## The "yes" reply

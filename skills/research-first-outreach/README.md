@@ -1,32 +1,24 @@
 # research-first-outreach
 
-A Claude skill for finding people who publish how they work, and asking them for a 20-minute research conversation instead of pitching them. This is the method Michael Isaac used to reach 20 independent consultants cold in September 2026, one of whom booked a call inside 18 hours.
+Find independent consultants who describe a repeatable client process on their own website. Email each one to ask for a 20-minute research conversation in exchange for a written brief. Michael Isaac used this on 31 August and 1 September 2026: 20 emails, one reply within 18 hours, one call the next morning.
 
-## Install
-
-With the skills CLI:
-
-```
-npx skills add mpiv-ai/mpiv-skills --skill research-first-outreach
-```
-
-Or tell Claude:
-
-> Read https://raw.githubusercontent.com/mpiv-ai/mpiv-skills/main/skills/research-first-outreach/SKILL.md and set this up for me. Start with step 0.
-
-Or copy this folder to `~/.claude/skills/research-first-outreach/`.
+Install with the rest of the library: `npx skills add mpiv-ai/mpiv-skills --skill research-first-outreach`, or point Claude at [SKILL.md](SKILL.md).
 
 ## What is in here
 
-- `SKILL.md`: the method, seven steps, plus the numbers from the run.
-- `references/email-template.md`: the exact email, both variants, the "yes" reply, the one follow-up.
-- `references/list-building.md`: search queries, the qualification checklist, record fields, a prompt you can hand an agent.
-- `references/research-page.md`: what the public research page needs to say.
+- `SKILL.md`: the method in seven steps, with the numbers from the run.
+- `references/email-template.md`: the email, both variants, the yes reply, the one follow-up.
+- `references/list-building.md`: search queries, the checks, record fields, a prompt for an agent.
+- `references/research-page.md`: what the research page needs to say.
 - `references/tracking.md`: tracker columns and the note logged per send.
+- `assets/`: the tracker CSV and the research page HTML, with placeholders.
+- `examples/`: the first run, redacted, and the 20 sends by cohort.
+- `scripts/check_tracker.py`: checks the tracker and prints reply rate per cohort.
+- `evals/evals.json`: three test prompts.
 
 ## The one rule
 
-The research has to be real and the brief has to be delivered. Run the interviews only if you would still run them with zero chance of a sale.
+The research has to be real and the brief has to be delivered. Run the interviews only if you would still run them with no chance of a sale.
 
 ## License
 

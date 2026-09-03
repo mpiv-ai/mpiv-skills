@@ -1,6 +1,6 @@
 # The themes research prompt
 
-Hand this to a background agent (Sonnet is enough) the same day as the call. It produces the sourced digest the memo is written from. Fill the braces; keep the rules.
+Hand this to a background agent (Sonnet is enough) the same day as the call. It produces the sourced digest. The memo is written from the digest. Fill the braces. Keep the rules.
 
 ```
 Objective: produce a sourced research digest on {N} themes from a customer-discovery interview with {role, no name}. The digest feeds a short memo Michael Isaac will send to the interviewee. Write it to {path}/research/interviews/{date}-{slug}-themes-research.md.
@@ -19,4 +19,4 @@ Exclusions: write nothing else in the repo. Do not name the interviewee or their
 Report back: the file path, word count, sources per theme, and any theme where evidence was thin.
 ```
 
-What to check when it returns: open three of the URLs at random and confirm the author and date. A digest with an invented source is worse than none.
+When it returns, open three of the URLs at random and confirm the author and date. Remove any source you cannot confirm.

@@ -1,6 +1,6 @@
 # Official guidance, checked 2026-09-03
 
-Every rule below has a source. Re-fetch the source before relying on a rule when this file is more than a month old. Sources: the Agent Skills specification (https://agentskills.io/specification), the Claude Code skills page (https://code.claude.com/docs/en/skills), the plugins page (https://code.claude.com/docs/en/plugins), the plugin marketplaces page (https://code.claude.com/docs/en/plugin-marketplaces), the eval guide (https://agentskills.io/skill-creation/evaluating-skills), and the skills CLI README (https://github.com/vercel-labs/skills).
+Every rule below has a source. If this file is more than a month old, re-fetch the sources before relying on it. Sources: the Agent Skills specification (https://agentskills.io/specification), the Claude Code skills page (https://code.claude.com/docs/en/skills), the plugins page (https://code.claude.com/docs/en/plugins), the plugin marketplaces page (https://code.claude.com/docs/en/plugin-marketplaces), the eval guide (https://agentskills.io/skill-creation/evaluating-skills), and the skills CLI README (https://github.com/vercel-labs/skills).
 
 ## Frontmatter: the spec's six fields
 
@@ -13,11 +13,11 @@ Every rule below has a source. Re-fetch the source before relying on a rule when
 | `metadata` | No | String-to-string map for your own tooling |
 | `allowed-tools` | No | Space-separated pre-approved tools; experimental in the spec |
 
-Claude.ai uploads, the Skills API, and `package_skill.py` reject any other field with "Unexpected key(s) in SKILL.md frontmatter". Staying inside these six keeps a skill portable.
+Claude.ai uploads, the Skills API, and `package_skill.py` reject any other field with "Unexpected key(s) in SKILL.md frontmatter". A skill that uses only these six fields loads everywhere.
 
 ## Claude Code extensions (Claude Code only)
 
-Use when the behavior is needed; they fail validation elsewhere.
+Use these only when the behavior is needed. Other tools reject them.
 
 - `disable-model-invocation: true`: only the user can invoke. For side-effect workflows (send, deploy, publish). The description is not loaded into context; the full skill loads on `/name`.
 - `user-invocable: false`: only Claude can invoke. For background knowledge. Description always in context.
@@ -85,4 +85,4 @@ my-skill/
     └── helper.py   (executed, not loaded)
 ```
 
-Scripts are executed, not read, so they cost no context. Bundle a script when every run would otherwise write the same helper. Keep it to the mechanical part.
+Scripts are executed, not read, so they use no context. Bundle a script when every run would otherwise write the same helper. Keep scripts to mechanical work.

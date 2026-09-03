@@ -44,4 +44,4 @@ If the workflow is briefable, add a row to the product-candidate register in the
 
 Do not pitch, propose solutions, or name what you are building. Your background comes up only if they ask. If they ask what you are building, the answer: still in research, the aggregated summary will show the pattern.
 
-Expect the guide to be wrong about which workflow matters. The site describes the offer they sell; the call reveals the chore they run. When that happens, follow the call.
+The guide may name the wrong workflow. The site describes the offer they sell. The call shows the chore they run. When the call goes somewhere else, follow the call.

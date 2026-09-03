@@ -1,6 +1,6 @@
 # Tracking
 
-Log the send the minute it goes. Michael used Twenty CRM (one person, one company, one note per touch). A spreadsheet is fine. The point is that every touch is written down before the next one happens.
+Log each send right after it goes. Michael used Twenty CRM: one person record, one company record, one note per touch. A spreadsheet works too. Write down every touch before the next one.
 
 ## Tracker columns
 
@@ -27,10 +27,10 @@ Next action: Review for reply or booking; send a value-adding follow-up if there
 
 ## After the call
 
-Add a second note: date, the one workflow discussed, every promise you made on the call in a numbered list, and the date each was delivered. The promise list is what you check before the next quarterly touch.
+Add a second note: the date, the workflow discussed, every promise you made on the call as a numbered list, and the date each one was delivered. Check this list before the next quarterly touch.
 
 ## Cohort discipline
 
-- 10 per day. Cohorts are how you compare variants and how you avoid looking like a bulk sender.
-- Mix segments inside a cohort so a reply tells you something about the message, not the industry.
-- Read the replies before sending the next cohort. Cohort 2 changed two lines because of what cohort 1 taught.
+- 10 per day. Cohorts let you compare variants, and 10 a day from one mailbox does not look like bulk mail.
+- Mix segments inside a cohort. Then a reply tells you about the message rather than the industry.
+- Read the replies before sending the next cohort. Cohort 2 changed two lines after cohort 1.
