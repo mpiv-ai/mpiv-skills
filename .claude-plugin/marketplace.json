@@ -1,0 +1,16 @@
+{
+  "name": "mpiv-skills",
+  "owner": { "name": "Michael Isaac", "url": "https://mpiv.ai" },
+  "metadata": {
+    "description": "Skills MPIsaac Ventures uses in consulting delivery, research, and operations",
+    "version": "0.1.0",
+    "repository": "https://github.com/mpiv-ai/mpiv-skills"
+  },
+  "plugins": [
+    {
+      "name": "mpiv-skills",
+      "description": "The MPIV skill library: research-first outreach and the skills that follow it",
+      "source": "./"
+    }
+  ]
+}

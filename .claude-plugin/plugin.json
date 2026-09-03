@@ -1,0 +1,11 @@
+{
+  "name": "mpiv-skills",
+  "description": "Skills MPIsaac Ventures uses in consulting delivery, research, and operations",
+  "version": "0.1.0",
+  "author": { "name": "Michael Isaac", "url": "https://mpiv.ai" },
+  "homepage": "https://mpiv.ai",
+  "repository": "https://github.com/mpiv-ai/mpiv-skills",
+  "license": "MIT",
+  "keywords": ["consulting", "research", "outreach", "claude-code", "agent-skills"],
+  "skills": "./skills"
+}
