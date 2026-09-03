@@ -26,6 +26,8 @@ Use when the behavior is needed; they fail validation elsewhere.
 - `arguments` plus `$ARGUMENTS`, `$0`, `$1`, and named `$name` placeholders.
 - `paths`: restrict the skill to files under given paths.
 
+Keep `name` and `description` free of `: ` (colon plus space) unless the whole value is quoted. Claude Code's validator accepted an unquoted description with a colon on 2026-09-03; the skills CLI silently skipped that skill, because strict YAML reads `: ` as a nested mapping.
+
 Frontmatter is read only when the opening `---` is the first line of the file. Malformed YAML loads the body with empty metadata, so the skill never triggers automatically.
 
 ## Size and loading

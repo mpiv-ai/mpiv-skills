@@ -1,6 +1,6 @@
 ---
 name: interview-to-brief
-description: Run a research interview and deliver everything promised on it: a one-workflow interview guide before the call, a findings file from the transcript, a scroll brief in the participant's own words, a sourced themes memo with named gaps, unlisted hosting, a threaded reply draft, and a promises table tracked to delivery. Use this whenever the user has a research or customer-discovery call booked or done, has a transcript or recording to process, or says "write the interview guide", "process the transcript", "write the brief", "themes memo", "what did I promise", "send the participant what I owe", or "research call follow-up". It is the second half of research-first-outreach.
+description: Run a research interview and deliver everything promised on it, from a one-workflow interview guide before the call, a findings file from the transcript, a scroll brief in the participant's own words, a sourced themes memo with named gaps, unlisted hosting, a threaded reply draft, and a promises table tracked to delivery. Use this whenever the user has a research or customer-discovery call booked or done, has a transcript or recording to process, or says "write the interview guide", "process the transcript", "write the brief", "themes memo", "what did I promise", "send the participant what I owe", or "research call follow-up". It is the second half of research-first-outreach.
 ---
 
 # Interview to brief

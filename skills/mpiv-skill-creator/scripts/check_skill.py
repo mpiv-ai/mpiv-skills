@@ -63,6 +63,9 @@ def check(path):
         errs.append("frontmatter: description missing")
     elif len(desc) > 1024:
         errs.append(f"description is {len(desc)} chars; spec max 1024")
+    for label, val in (("name", name), ("description", desc)):
+        if val and not (val.startswith('"') or val.startswith("'")) and (": " in val or val.endswith(":") or val.startswith(("&", "*", "!", "|", ">", "%", "@", "`"))):
+            errs.append(f"{label} is an unquoted YAML scalar containing ': ' or a reserved leading character; strict parsers (the skills CLI) skip the skill")
     for key in re.findall(r"^([A-Za-z-]+):", fm, re.M):
         if key not in ("name", "description", "license", "compatibility", "metadata", "allowed-tools",
                        "disable-model-invocation", "user-invocable", "disallowed-tools", "model",
