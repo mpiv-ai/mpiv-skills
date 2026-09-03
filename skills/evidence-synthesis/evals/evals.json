@@ -1,0 +1,43 @@
+{
+  "skill_name": "evidence-synthesis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I'm a fractional product lead budgeted at 15 hours a week. The client gave me Notion access, 40 meeting transcripts from the last quarter, a Slack export, and a roadmap spreadsheet. They want a current-state findings doc in three weeks. Where do I start and what do I deliver?",
+      "expected_output": "The response sets the budget (15 hours, three weeks, the deliverable date) first, then produces a source inventory with a row per source including limits and dates before any reading, lays out the intake order (roadmap and Notion records first, transcripts second, Slack last), describes extraction passes into a candidates list, and names the deliverables: findings table with evidence and effect, evidence-limits section, client-safe appendix, hour ledger.",
+      "files": [],
+      "expectations": [
+        "The response writes down the weekly cap and the deliverable date before any reading plan",
+        "The response produces or describes a source inventory with a limit column, filled before reading for content",
+        "The intake order puts records (roadmap, Notion records) before transcripts and Slack last",
+        "The deliverables include a findings table with evidence and effect columns and an evidence-limits section",
+        "The response says raw transcripts are excluded in favor of client-safe summaries",
+        "The response mentions an hour ledger or weekly hours against the cap"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Here are my draft findings for the client: (1) 'Employees cannot find current policies' based on four interviews saying so; (2) 'The company has 300 duplicate SaaS licenses' because the SaaS registry lists 150 tools and the SSO log shows 450; (3) 'The CFO is difficult' from two interviews. Check them.",
+      "expected_output": "The response keeps finding 1 with the four interviews cited as a pattern and asks what record would confirm it; rewrites finding 2 to state both counts with their populations and says the figures do not show duplicates without seat data; removes finding 3 from any client-facing file because it is a personal judgment about a named person, and explains each decision.",
+      "files": [],
+      "expectations": [
+        "Finding 1 is retained and labeled as a pattern from four interviews, with a note on what record would confirm it",
+        "Finding 2 is rewritten so the two counts are attributed to their populations and the duplicate-license claim is withdrawn or marked unproven",
+        "Finding 3 is removed from client-facing material with the reason that it is a judgment about a named person",
+        "The response uses or references the finding, evidence, effect structure"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The client's IT export of seat usage was due two weeks ago and still hasn't come. My final doc is due Friday. What do I do with the parts that depend on it?",
+      "expected_output": "The response says to keep the gap in the inventory as a limit, write the evidence-limits sentence that the export was not received and which questions therefore remain open, move any dependent finding to 'heard, not confirmed' or state it only with the evidence available, and deliver on Friday without guessing the missing figures.",
+      "files": [],
+      "expectations": [
+        "The response tells the user to record the missing export as a limit in the inventory",
+        "The response gives an evidence-limits sentence stating the export was not received and what stays open",
+        "The response does not fill in or estimate the missing seat figures",
+        "The response keeps the Friday delivery rather than waiting for the export"
+      ]
+    }
+  ]
+}
